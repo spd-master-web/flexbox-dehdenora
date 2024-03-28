@@ -22,10 +22,10 @@ body {
 .navigation {
   min-width: 40em;
   padding: .5em;
-  
+
   display: flex;
   justify-content: center;
-  
+
   list-style: none;
   background-color: #ffc0cb;
 }
@@ -45,10 +45,10 @@ body {
 
 .navigation-2 {
   padding: .5em;
-  
+
   display: flex;
   justify-content: space-around;
-  
+
   list-style: none;
   background-color: #ffc0cb;
 }
@@ -66,10 +66,9 @@ body {
 
 .navigation-3 {
   min-width: 40em;
-  
+
   display: flex;
-  justify-content: center;
-  
+
   list-style: none;
   background-color: #ffc0cb;
 }
@@ -92,4 +91,42 @@ body {
   border-left: .125em solid red;
   background-color: #ff0000;
   color: white;
+}
+
+/* Breakpoint smaller screens */
+@media only screen and (max-width: 960px) {
+
+  .center {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation-3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .navigation-3-link {
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    border-right: .125em solid red;
+    border-left: 0;
+    color: #ff0000;
+  }
+
+  .navigation-3-link:last-child {
+    border-right: 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    flex: 40em;
+  }
+
 }
