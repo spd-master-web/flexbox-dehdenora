@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #eee;
+}
+
+section {
+  margin: 10em 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centering-container {
+  width: 40em;
+  min-height: 30em;
+
+  border: .125em dashed #666;
+}
+
+.centering-item {
+  padding: 1.5em;
+
+  flex: 0 65%;
+
+  border: .625em solid pink;
+}
+
+.align-start {
+  align-self: flex-start;
+}
+
+.align-end {
+  align-self: flex-end;
+}
