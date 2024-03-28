@@ -48,3 +48,8 @@ p {
 .align-end {
   align-self: flex-end;
 }
+
+.align-stretch {
+  align-self: stretch;
+}
+
